@@ -5,6 +5,7 @@ Git repository for my laptop kernel config (Comapl IFL90)
 
 Features:
 * 1000Hz;
+* Core2 optimizations (Intel T7500);
 * Lean kernel - got rid of some "bloat" (but not all I think);
 * Frequently used modules are compiled inline;
  * Notorious exceptions: PPTP and Radeon;
@@ -17,6 +18,8 @@ Tested and working:
 * Audio (Intel Corporation 82801H (ICH8 Family) HD Audio Controller (rev 03));
 * Ethernet (Broadcom Corporation NetLink BCM5787M Gigabit Ethernet PCI Express (rev 02));
 * Wlan (Intel Corporation PRO/Wireless 4965 AG or AGN [Kedron] Network Connection (rev 61));
+* CPU frequency scaling;
+* CPU thermal sensors;
 
 What does not work (so far):
 * Virtualbox (requires manual module compilation)
