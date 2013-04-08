@@ -9,7 +9,7 @@ Features:
 * Lean kernel - got rid of some "bloat" (but not all I think);
 * Frequently used modules are compiled inline;
  * Notorious exceptions: PPTP and Radeon;
-* Gzip compressed for performance (will switch to lzo in a next revision);
+* Lzop compressed for performance;
 
 Tested and working:
 * 3D (Mobility Radeon HD3650);
@@ -22,7 +22,8 @@ Tested and working:
 * CPU thermal sensors;
 
 What does not work (so far):
-* Virtualbox (requires manual module compilation)
+* Virtualbox (requires manual module compilation);
+* Some Iptables rules do not seem to be working. I will have to dig deeper to figure this out;
 
 Results:
 * Over 1 second saved on boot (my laptop boots in 7 seconds from GRUB2 to GDM, down from 8, so that's about a 15% improvement);
