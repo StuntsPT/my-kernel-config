@@ -10,7 +10,7 @@ Features:
 * Frequently used modules are compiled inline;
  * Notorious exceptions: PPTP and Radeon;
 * Lzop compressed for performance;
-* Uses a patch to enable the thermal sensosrs in the Radeon card (Since the card is not the original nVidia, the sensors are not correctly identified by the BIOS. The patch "forces" the sensors to load.) Special thanks to the radeon devs who have shown me how to do this! (**agd5f** and **mjg59**);
+* Uses a patch to enable the thermal sensosrs in the Radeon card (Since the card is not the original nVidia, the sensors are not correctly identified by the BIOS. The patch "forces" the sensors to load.) Special thanks to the radeon devs who have shown me how to do this! ( **agd5f** and **mjg59** );
 
 Tested and working:
 * 3D (Mobility Radeon HD3650);
