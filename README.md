@@ -4,7 +4,7 @@ my-kernel-config
 Git repository for my laptop kernel config (Comapl IFL90)
 
 Features:
-* 1000Hz;
+* 1000Hz kernel;
 * Core2 optimizations (Intel T7500);
 * Lean kernel - got rid of some "bloat" (but not all I think);
 * Frequently used modules are compiled inline;
@@ -21,10 +21,11 @@ Tested and working:
 * Wlan (Intel Corporation PRO/Wireless 4965 AG or AGN [Kedron] Network Connection (rev 61));
 * CPU frequency scaling;
 * CPU thermal sensors;
+* GPU thermal sensors;
 
 What does not work (so far):
 * Virtualbox (requires manual module compilation);
-* ~~Some Iptables rules do not seem to be working. I will have to dig deeper to figure this out;~~ Solved!
+* ~~Some Iptables rules do not seem to be working. I will have to dig deeper to figure this out;~~ **Solved!**;
 
 Results:
 * Over 1 second saved on boot (my laptop boots in 7 seconds from GRUB2 to GDM, down from 8, so that's about a 15% improvement);
