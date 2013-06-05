@@ -10,6 +10,7 @@ Features:
 * Frequently used modules are compiled inline;
  * Notorious exceptions: PPTP and Radeon;
 * Lzop compressed for performance;
+* Uses a patch to enable the thermal sensosrs in the Radeon card (Since the card is not the original nVidia, the sensors are not correctly identified by the BIOS. The patch "forces" the sensors to load.);
 
 Tested and working:
 * 3D (Mobility Radeon HD3650);
@@ -23,9 +24,10 @@ Tested and working:
 
 What does not work (so far):
 * Virtualbox (requires manual module compilation);
-* Some Iptables rules do not seem to be working. I will have to dig deeper to figure this out;
+* ~~Some Iptables rules do not seem to be working. I will have to dig deeper to figure this out;~~ Solved!
 
 Results:
 * Over 1 second saved on boot (my laptop boots in 7 seconds from GRUB2 to GDM, down from 8, so that's about a 15% improvement);
 * Very responsive desktop. I can identify the kernel I am running (stock Arch kernel or my custom one) just by playing around in gnome-shell;
 * A great learning experience on the kernel (at least I can say I have scratched the surface);
+* Temperature readings from the Radeon card, which need a kernel patch to work.
